@@ -1,5 +1,3 @@
-uint32 test
-
 CommandSimple rTact
 bool rTact_valid
 
@@ -18,10 +16,10 @@ bool lArm_valid
 CommandArm rArm
 bool rArm_valid
 
-CommandSimple lArmFri
+std_msgs/Int32 lArmFri
 bool lArmFri_valid
 
-CommandSimple rArmFri
+std_msgs/Int32 rArmFri
 bool rArmFri_valid
 
 CommandHand lHand
