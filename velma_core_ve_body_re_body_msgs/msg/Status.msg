@@ -1,5 +1,3 @@
-uint32 test
-
 StatusArm rArm
 bool rArm_valid
 
