@@ -1,39 +1,45 @@
-StatusArm rArm
+StatusArm rArm                  # subsystem_buffer{type: container; validity: rArm_valid}
 bool rArm_valid
 
-StatusArmFriRobot rArmFriRobot
-StatusArmFriIntf rArmFriIntf
+StatusArmFriRobot rArmFriRobot      # subsystem_buffer{type: port; validity: rArmFriRobot_valid}
+bool rArmFriRobot_valid
 
-StatusArm lArm
+StatusArmFriIntf rArmFriIntf        # subsystem_buffer{type: port; validity: rArmFriIntf_valid}
+bool rArmFriIntf_valid
+
+StatusArm lArm                  # subsystem_buffer{type: container; validity: lArm_valid}
 bool lArm_valid
 
-StatusArmFriRobot lArmFriRobot
-StatusArmFriIntf lArmFriIntf
+StatusArmFriRobot lArmFriRobot      # subsystem_buffer{type: port; validity: lArmFriRobot_valid}
+bool lArmFriRobot_valid
 
-StatusHand rHand
+StatusArmFriIntf lArmFriIntf        # subsystem_buffer{type: port; validity: lArmFriIntf_valid}
+bool lArmFriIntf_valid
+
+StatusHand rHand                # subsystem_buffer{type: container; validity: rHand_valid}
 bool rHand_valid
 
-StatusHand lHand
+StatusHand lHand                # subsystem_buffer{type: container; validity: lHand_valid}
 bool lHand_valid
 
-StatusFT rFt
+StatusFT rFt                    # subsystem_buffer{type: container; validity: rFt_valid}
 bool rFt_valid
 
-StatusFT lFt
+StatusFT lFt                    # subsystem_buffer{type: container; validity: lFt_valid}
 bool lFt_valid
 
-StatusMotor tMotor
+StatusMotor tMotor              # subsystem_buffer{type: container; validity: tMotor_valid}
 bool tMotor_valid
 
-StatusMotor hpMotor
+StatusMotor hpMotor             # subsystem_buffer{type: container; validity: hpMotor_valid}
 bool hpMotor_valid
 
-StatusMotor htMotor
+StatusMotor htMotor             # subsystem_buffer{type: container; validity: htMotor_valid}
 bool htMotor_valid
 
-barrett_hand_controller_msgs/BHPressureState rHand_p
+barrett_hand_controller_msgs/BHPressureState rHand_p    # subsystem_buffer{type: port; validity: rHand_p_valid}
 bool rHand_p_valid
 
-geometry_msgs/Wrench[3] lHand_f
+geometry_msgs/Wrench[3] lHand_f                         # subsystem_buffer{type: port; validity: lHand_f_valid}
 bool lHand_f_valid
 
