@@ -25,49 +25,15 @@
  SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 */
 
-#include <rtt/Component.hpp>
-
-#include "common_interfaces/interface_tx.h"
-#include "common_interfaces/interface_rx.h"
-
-#include "common_interfaces/message_split.h"
-#include "common_interfaces/message_concate.h"
-
-//#include "velma_core_ve_body_re_body_interface/command_ports.h"
-//#include "velma_core_ve_body_re_body_interface/status_ports.h"
-
-#include <Eigen/Dense>
-#include "velma_core_ve_body_re_body_interface/port_data.h"
-
 #include "velma_core_ve_body_re_body_msgs/Status.h"
 #include "velma_core_ve_body_re_body_msgs/Command.h"
 
+#include "velma_core_ve_body_re_body_interface/port_data.h"
+#include "common_interfaces/interfaces.h"
+
 using namespace velma_core_ve_body_re_body_msgs;
-//using namespace velma_core_ve_body_re_body_interface;
 
-typedef InterfaceTx<Status > VelmaCoreVeBodyReBodyStatusTx;
-ORO_LIST_COMPONENT_TYPE(VelmaCoreVeBodyReBodyStatusTx)
-
-typedef InterfaceRx<Status > VelmaCoreVeBodyReBodyStatusRx;
-ORO_LIST_COMPONENT_TYPE(VelmaCoreVeBodyReBodyStatusRx)
-
-typedef InterfaceTx<Command > VelmaCoreVeBodyReBodyCommandTx;
-ORO_LIST_COMPONENT_TYPE(VelmaCoreVeBodyReBodyCommandTx)
-
-typedef InterfaceRx<Command > VelmaCoreVeBodyReBodyCommandRx;
-ORO_LIST_COMPONENT_TYPE(VelmaCoreVeBodyReBodyCommandRx)
-
-typedef MessageSplit<Command_Ports > VelmaCoreVeBodyReBodyCommandSplit;
-ORO_LIST_COMPONENT_TYPE(VelmaCoreVeBodyReBodyCommandSplit)
-
-typedef MessageConcate<Status_Ports > VelmaCoreVeBodyReBodyStatusConcate;
-ORO_LIST_COMPONENT_TYPE(VelmaCoreVeBodyReBodyStatusConcate)
-
-typedef MessageSplit<Status_Ports > VelmaCoreVeBodyReBodyStatusSplit;
-ORO_LIST_COMPONENT_TYPE(VelmaCoreVeBodyReBodyStatusSplit)
-
-typedef MessageConcate<Command_Ports > VelmaCoreVeBodyReBodyCommandConcate;
-ORO_LIST_COMPONENT_TYPE(VelmaCoreVeBodyReBodyCommandConcate)
+ORO_LIST_INTERFACE_COMPONENTS(Command, Status, VelmaCoreVeBodyReBody)
 
 ORO_CREATE_COMPONENT_LIBRARY()
 
