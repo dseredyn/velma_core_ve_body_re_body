@@ -5,7 +5,6 @@ project(velma_core_ve_body_re_body_interface)
 # Find the RTT-ROS package (this transitively includes the Orocos CMake macros)
 find_package(catkin REQUIRED COMPONENTS
   rtt_ros
-  diagnostic_msgs
   velma_core_ve_body_re_body_msgs
   barrett_hand_controller_msgs
   eigen_conversions

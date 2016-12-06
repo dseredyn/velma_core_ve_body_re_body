@@ -14,7 +14,6 @@
   <build_depend>ocl</build_depend>
   <build_depend>rtt_ros</build_depend>
   <build_depend>rtt_rosclock</build_depend>
-  <build_depend>diagnostic_msgs</build_depend>
   <build_depend>velma_core_ve_body_re_body_msgs</build_depend>
   <build_depend>barrett_hand_controller_msgs</build_depend>
   <build_depend>common_interfaces</build_depend>
@@ -23,7 +22,6 @@
   <run_depend>rtt</run_depend>
   <run_depend>ocl</run_depend>
   <run_depend>rtt_ros</run_depend>
-  <run_depend>diagnostic_msgs</run_depend>
   <run_depend>common_interfaces</run_depend>
 
   <!-- ROS Msg Typekits and Srv Proxies -->
