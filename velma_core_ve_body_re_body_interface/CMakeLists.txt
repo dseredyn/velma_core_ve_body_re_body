@@ -35,7 +35,7 @@ ADD_DEFINITIONS(-DEIGEN_RUNTIME_NO_MALLOC)
 ### Orocos Targets ###
 
 orocos_component(velma_core_ve_body_re_body_interface
-    src/velma_core_ve_body_re_body_interface.cpp
+    src/interface.cpp
 )
 
 target_link_libraries(velma_core_ve_body_re_body_interface
