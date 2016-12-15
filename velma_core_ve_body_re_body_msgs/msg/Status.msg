@@ -1,19 +1,19 @@
 StatusArm rArm                  # subsystem_buffer{type: container; validity: rArm_valid}
 bool rArm_valid
 
-StatusArmFriRobot rArmFriRobot      # subsystem_buffer{type: port; data_type: tFriRobotState; validity: rArmFriRobot_valid; includes: <kuka_lwr_fri/friComm.h>}
+StatusArmFriRobot rArmFriRobot      # subsystem_buffer{type: port; validity: rArmFriRobot_valid}
 bool rArmFriRobot_valid
 
-StatusArmFriIntf rArmFriIntf        # subsystem_buffer{type: port; data_type: tFriIntfState; validity: rArmFriIntf_valid; includes: <kuka_lwr_fri/friComm.h>}
+StatusArmFriIntf rArmFriIntf        # subsystem_buffer{type: port; validity: rArmFriIntf_valid}
 bool rArmFriIntf_valid
 
 StatusArm lArm                  # subsystem_buffer{type: container; validity: lArm_valid}
 bool lArm_valid
 
-StatusArmFriRobot lArmFriRobot      # subsystem_buffer{type: port; data_type: tFriRobotState; validity: lArmFriRobot_valid; includes: <kuka_lwr_fri/friComm.h>}
+StatusArmFriRobot lArmFriRobot      # subsystem_buffer{type: port; validity: lArmFriRobot_valid}
 bool lArmFriRobot_valid
 
-StatusArmFriIntf lArmFriIntf        # subsystem_buffer{type: port; data_type: tFriIntfState; validity: lArmFriIntf_valid; includes: <kuka_lwr_fri/friComm.h>}
+StatusArmFriIntf lArmFriIntf        # subsystem_buffer{type: port; validity: lArmFriIntf_valid}
 bool lArmFriIntf_valid
 
 StatusHand rHand                # subsystem_buffer{type: container; validity: rHand_valid}
@@ -37,9 +37,9 @@ bool hpMotor_valid
 StatusMotor htMotor             # subsystem_buffer{type: container; validity: htMotor_valid}
 bool htMotor_valid
 
-barrett_hand_controller_msgs/BHPressureState rHand_p    # subsystem_buffer{type: port; data_type: barrett_hand_controller_msgs::BHPressureState; validity: rHand_p_valid}
+barrett_hand_controller_msgs/BHPressureState rHand_p    # subsystem_buffer{type: port; validity: rHand_p_valid}
 bool rHand_p_valid
 
-geometry_msgs/Wrench[3] lHand_f                         # subsystem_buffer{type: port; data_type: geometry_msgs::Wrench[3]; validity: lHand_f_valid}
+geometry_msgs/Wrench[3] lHand_f                         # subsystem_buffer{type: port; validity: lHand_f_valid}
 bool lHand_f_valid
 

@@ -1,6 +1,6 @@
 # subsystem_buffer_parent_container{Command}
 
-int32 cmd       # subsystem_buffer{type: port; data_type: int32_t; }
+int32 cmd       # subsystem_buffer{type: port}
 
-bool valid      # subsystem_buffer{type: port; data_type: bool; }
+bool valid      # subsystem_buffer{type: port}
 
