@@ -10,6 +10,6 @@ ros_generate_rtt_typekit(velma_core_ve_body_re_body_msgs)
 
 orocos_generate_package(
   DEPENDS velma_core_ve_body_re_body_msgs
-  DEPENDS_TARGETS rtt_roscomm rtt_std_msgs rtt_geometry_msgs rtt_barrett_hand_controller_msgs
+  DEPENDS_TARGETS rtt_roscomm rtt_std_msgs rtt_geometry_msgs
 
 )
