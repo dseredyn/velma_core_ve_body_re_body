@@ -1,5 +1,5 @@
-CommandMotor tMotor     # subsystem_buffer{type: container; validity: tMotor_valid}
-bool tMotor_valid
+float64 tMotor_i        # subsystem_buffer{type: port; validity: tMotor_i_valid}
+bool tMotor_i_valid
 
 CommandMotor hpMotor    # subsystem_buffer{type: container; validity: hpMotor_valid}
 bool hpMotor_valid
@@ -18,4 +18,13 @@ bool lArmFri_valid
 
 std_msgs/Int32 rArmFri  # subsystem_buffer{type: port; validity: rArmFri_valid}
 bool rArmFri_valid
+
+int32 tact              # subsystem_buffer{type: port; validity: tact_valid}
+bool tact_valid
+
+CommandHand rHand       # subsystem_buffer{type: container; validity: rHand_valid}
+bool rHand_valid
+
+CommandHand lHand       # subsystem_buffer{type: container; validity: lHand_valid}
+bool lHand_valid
 

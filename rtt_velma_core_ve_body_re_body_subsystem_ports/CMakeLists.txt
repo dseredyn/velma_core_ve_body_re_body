@@ -14,5 +14,6 @@ orocos_generate_package(
   DEPENDS velma_core_ve_body_re_body_msgs
   DEPENDS_TARGETS rtt_subsystem_ports
 # rtt_velma_core_ve_body_re_body_msgs
-# rtt_std_msgs rtt_geometry_msgs rtt_barrett_hand_controller_msgs
+# rtt_std_msgs rtt_geometry_msgs
+  rtt_barrett_hand_controller_msgs
 )
